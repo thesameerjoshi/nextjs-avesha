@@ -1,31 +1,82 @@
+import { Cross as Hamburger } from "hamburger-react";
+import { useState, useRef } from "react";
+import Link from "next/link";
+import { animated, useTransition, useChain } from "react-spring";
+import { DialogOverlay, DialogContent } from "@reach/dialog";
 
+const AnimatedDialogOverlay = animated(DialogOverlay);
 
-const NavBar = () => {
+const isInternalLink = (href) => {
+  // this is cheap, doesn't catch protocol links like //google.com
+  return href && href.startsWith("/");
+};
+
+function MobileNav({ isOpen, setIsOpen }) {
+  const headerLinks = [
+    {
+      title: "Music",
+      href: "/music"
+    },
+    {
+      title: "Blog",
+      href: "/blog"
+    },
+    {
+      title: "Github",
+      href: "https://github.com/ryanrishi"
+    }
+  ];
+
+  const overlayRef = useRef();
+  const overlayTransitions = useTransition(
+    isOpen,
+    {},
+    {
+      ref: overlayRef,
+      from: { top: "-100vh" },
+      to: { top: 0 }
+    }
+  );
+
+  const contentRef = useRef();
+  const contentTransitions = useTransition(
+    isOpen ? [1, 2, 3, 4] : [],
+    {},
+    {
+      ref: contentRef,
+      trail: 30
+    }
+  );
+
+  useChain(
+    isOpen ? [overlayRef, contentRef] : [contentRef, overlayRef],
+    0,
+    isOpen ? 0 : 0.1
+  );
+
   return (
-    <>
-    <div className="navbar bg-base-100">
-        <div className="navbar-start">
-            <div className="dropdown">
-            <label tabIndex="0" className="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Homepage</a></li>
-                <li><a>About</a></li>
-            </ul>
-            </div>
-        </div>
-        <div className="navbar-center">
-            <a className="btn btn-ghost normal-case text-xl">NavBar</a>
-        </div>
-        <div className="navbar-end">
-            <button className="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </button>
-        </div>
+    <div className="flex items-center justify-between border-b-2">
+      <span className="uppercase">
+        Ryan <b>Rishi</b>
+      </span>
+      <Hamburger toggled={isOpen} toggle={setIsOpen} />
+      {isOpen &&
+        headerLinks.map(
+          ({ title, href }) =>
+            isInternalLink(href) && <Link href={href}>{title}</Link>
+        )}
     </div>
-    </>
-  )
+  );
 }
 
-export default NavBar
+function Navbar() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  return (
+    <div>
+      <MobileNav isOpen={isMobileNavOpen} setIsOpen={setIsMobileNavOpen} />
+    </div>
+  );
+}
+
+export default Navbar;
