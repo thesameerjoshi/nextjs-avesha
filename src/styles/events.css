@@ -1,0 +1,165 @@
+/*! CSS Used from: https://avesha.io/wp-content/themes/avesha/css/main-22.css */
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:active,a:hover{outline-width:0;}
+img{border-style:none;}
+::-webkit-input-placeholder{color:inherit;opacity:.54;}
+[class^=icon-]{font-family:'icomoon'!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.icon-Arrow---Right:before{content:"\e900";color:#fff;}
+span:disabled{opacity:.3;}
+.text--sm{font-size:14px!important;line-height:22px;}
+.text-16{font-size:15px;line-height:23px;}
+@media (min-width:992px){
+.text-16{font-size:16px;line-height:24px;}
+}
+.text-20{font-size:16px!important;line-height:24px;}
+@media (min-width:768px){
+.text-20{font-size:18px!important;line-height:26px;}
+}
+@media (min-width:992px){
+.text-20{font-size:20px!important;line-height:28px;}
+}
+.fnt-500{font-weight:500;}
+.fnt-700{font-weight:700!important;}
+.text-51e{color:#03051e;}
+.text-8f3{color:#2868f3;}
+.sec-head{width:100%;margin-bottom:28px;}
+@media (min-width:768px){
+.sec-head{margin-bottom:32px;}
+}
+@media (min-width:992px){
+.sec-head{margin-bottom:40px;}
+}
+.link{font-size:14px;color:#999;display:inline-block;text-decoration:none;font-weight:700;}
+@media (max-width:767px){
+.link{font-size:16px!important;}
+}
+@media (min-width:992px){
+.link{font-size:16px;}
+}
+.link:hover{text-decoration:none!important;}
+.link:hover{color:#4a398d;}
+a:hover{text-decoration:none!important;}
+h3{margin-top:0;}
+h3{margin-bottom:15px;}
+.link::after{background:#2868f3;}
+.mb-30{margin-bottom:30px;}
+.link{position:relative;padding-right:25px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;}
+.link::after{position:absolute;content:"";bottom:0;left:0;width:0;height:1px;opacity:0;-webkit-transition:.4s ease-in-out;-o-transition:.4s ease-in-out;transition:.4s ease-in-out;z-index:1;}
+.link:hover::after{width:100%;opacity:1;}
+.link__ar{position:absolute;top:50%;right:-3px;-webkit-transform:translateY(-45%);-ms-transform:translateY(-45%);transform:translateY(-45%);}
+.link__ar::before{color:#2868f3;}
+@media print{
+*,::after,::before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a,a:visited{text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+.col-lg-4,.col-md-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+.col-12{-webkit-box-flex:0;-ms-flex:0 0 83.33333%;flex:0 0 83.33333%;max-width:83.33333%;}
+.col-12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%;max-width:91.66667%;}
+.col-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+@media (min-width:768px){
+.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 41.66667%;flex:0 0 41.66667%;max-width:41.66667%;}
+.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+@media (min-width:992px){
+.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-lg-4{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%;}
+}
+.align-items-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;}
+@media (min-width:768px){
+.justify-content-md-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;}
+}
+.mb-0{margin-bottom:0!important;}
+.mb-3{margin-bottom:1rem!important;}
+@media (min-width:768px){
+.mt-md-auto{margin-top:auto!important;}
+}
+*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit;}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;}
+img{border-style:none;}
+a{text-decoration:none;}
+.paper-tag-info__title{padding:5px!important;background-color:rgba(40, 104, 243, .05);color:#2868f3!important;font-size:14px;margin-right:25px;}
+.paper-tag-info__title::before{content:none;display:none;}
+.paper-tag-info span{position:relative;display:inline-block;color:rgba(3, 5, 30, .6);padding-left:14px;padding-right:18px;font-size:14px;line-height:22px;}
+.paper-tag-info span::before{position:absolute;content:"";top:8px;left:0;width:6px;height:6px;-webkit-border-radius:50%;border-radius:50%;background:#03051e;opacity:.6;}
+.whitepaper-list__item{margin-top:15px;}
+@media (min-width:768px){
+.whitepaper-list__item{margin-top:30px;}
+}
+@media (max-width:767px){
+.whitepaper-list__item:first-child{margin-top:0;}
+}
+@media (min-width:768px){
+.whitepaper-list__item:nth-child(1),.whitepaper-list__item:nth-child(2){margin-top:0;}
+}
+.whitepaper-list__item .paper-info{background:#f4f7fe;padding:15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-border-radius:4px;border-radius:4px;}
+@media (min-width:768px){
+.whitepaper-list__item .paper-info{padding:24px;height:100%;}
+}
+.whitepaper-list__item .paper-info__img{height:200px;text-align:right;margin-bottom:3px;}
+.whitepaper-list__item .paper-info__img img{max-width:100%;height:100%;-o-object-fit:cover;object-fit:cover;}
+.whitepaper-list__item .paper-info .paper-title{font-size:18px;line-height:26px;}
+.mb-30{margin-bottom:30px;}
+/*! CSS Used from: https://avesha.io/wp-content/plugins/avesha-documentation/public/css/avesha-documentation-public.css?ver=1.0.11 ; media=all */
+@media all{
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-track{background:#f1f1f1;}
+::-webkit-scrollbar-thumb{background:#888;transition:all 0.3s ease-in-out;}
+::-webkit-scrollbar-thumb:hover{background:#555;}
+}
+/*! CSS Used from: https://avesha.io/wp-content/themes/avesha/assets/css/event-page.css?ver=20220406 ; media=all */
+@media all{
+.avr-paper-info{box-shadow:0 3px 16px rgba(0, 0, 0, 0.07);padding:0!important;border-radius:8px!important;}
+.avr-paper-info__img{text-align:center!important;padding:32px 22px 0 23px!important;background:linear-gradient(107.3deg, #E4DBF5 0%, #F6F1FF 100%)!important;border-top-left-radius:4px;border-top-right-radius:4px;}
+.avr-paper-info__img img{width:100%;object-position:top;border-top-left-radius:4px;border-top-right-radius:4px;}
+.avr-event-footer{padding:0 16px 30px 20px!important;position:relative;height:52%!important;}
+.avr-event-footer h3{padding-bottom:30px;}
+.avr-event-footer .paper-tag-info span{font-weight:500;padding:6px 10px!important;border-radius:3px;}
+.avr-event-footer .paper-tag-info__title{background-color:#F0F5FF!important;}
+.avr-ready-more{position:absolute;bottom:30px!important;}
+.whitepaper-list__item .paper-info{background:#ffffff!important;}
+.avr-tab-content .sec-head{margin-bottom:30px!important;}
+}
+/*! CSS Used from: Embedded */
+.paper-tag-info{position:relative;}
+.calendar-tag{position:absolute!important;padding:5px!important;background-color:rgba(40, 104, 243, .05);color:#2868f3!important;font-size:14px;right:0px;display:inline-flex!important;}
+.calendar-tag::before{content:none!important;}
+.calendar-tag img{margin-right:5px;}
+.whitepaper-list__item .paper-info .paper-title{display:block;max-width:100%;line-height:26px;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;}
+.whitepaper-list__item .paper-info__img{margin-bottom:24px;}
+@media (max-width: 767px){
+.whitepaper-list__item .paper-info__img{margin-bottom:15px;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:'icomoon';src:url(https://avesha.io/wp-content/themes/avesha/fonts/icons/icomoon.eot?i2n7sf);src:url(https://avesha.io/wp-content/themes/avesha/fonts/icons/icomoon.eot?i2n7sf#iefix) format("embedded-opentype"), url(https://avesha.io/wp-content/themes/avesha/fonts/icons/icomoon.ttf?i2n7sf) format("truetype"), url(https://avesha.io/wp-content/themes/avesha/fonts/icons/icomoon.woff?i2n7sf) format("woff"), url(https://avesha.io/wp-content/themes/avesha/fonts/icons/icomoon.svg?i2n7sf#icomoon) format("svg");font-weight:400;font-style:normal;font-display:block;}
+
+h1{font-size:2em;margin:.67em 0;}
+::-webkit-input-placeholder{color:inherit;opacity:.54;}
+.text-36{font-size:27px;line-height:34px;}
+@media (min-width:768px){
+.text-36{font-size:31px;line-height:39px;}
+}
+@media (min-width:992px){
+.text-36{font-size:36px;line-height:44px;}
+}
+.fnt-700{font-weight:700!important;}
+.text-fff{color:#fff;}
+h1{margin-top:0;}
+h1{margin-bottom:15px;}
+@media print{
+*,::after,::before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+}
+.mb-4{margin-bottom:1.5rem!important;}
+*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit;}
+h1{font-size:2em;margin:.67em 0;}
+/*! CSS Used from: https://avesha.io/wp-content/plugins/avesha-documentation/public/css/avesha-documentation-public.css?ver=1.0.11 ; media=all */
+@media all{
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-track{background:#f1f1f1;}
+::-webkit-scrollbar-thumb{background:#888;transition:all 0.3s ease-in-out;}
+::-webkit-scrollbar-thumb:hover{background:#555;}
+}

@@ -1,17 +1,15 @@
-import NavBar from "./NavBar"
-
-
+import Banner from "@/components/Banner"
+import { Box, Container } from "@mui/material"
 
 const Layout = ({children}) => {
   return (
     <>
-      <NavBar />
-      <div className="font-syne">
-            <main className="sm:container sm:mx-auto">
-              {children}
-            </main>
-        {/* <Footer /> */}
-      </div>
+        <Banner />
+      <Container>
+        <Box sx={{ height: '100vh' }}>
+          {children}
+        </Box>
+      </Container>
     </>
     
   )

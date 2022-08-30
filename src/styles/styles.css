@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
